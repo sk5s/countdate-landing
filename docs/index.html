@@ -36,18 +36,40 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Countdate",
-    "operatingSystem": "Android, iOS",
-    "applicationCategory": "UtilitiesApplication",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "description": "Countdate is an open source app that helps you keep track of important dates. Find out exactly how many days are left until a specific event, deadline, or special occasion.",
-    "url": "https://countdate.sk5s.com/",
-    "image": "https://countdate.sk5s.com/assets/img/icon-foreground.png"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://countdate.sk5s.com/#website",
+        "url": "https://countdate.sk5s.com",
+        "name": "Countdate",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://sk5s.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://countdate.sk5s.com/#app",
+        "name": "Countdate",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android, iOS, Web",
+        "inLanguage": ["zh-Hant", "en"],
+        "description": "Countdate is an open source app that helps you keep track of important dates. Find out exactly how many days are left until a specific event, deadline, or special occasion.",
+        "url": "https://countdate.sk5s.com/",
+        "image": "https://countdate.sk5s.com/assets/img/icon-foreground.png",
+        "author": { "@id": "https://sk5s.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TWD"
+        },
+        "installUrl": "https://play.google.com/store/apps/details?id=cyou.sk5s.app.countdate",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=cyou.sk5s.app.countdate",
+          "https://apps.apple.com/US/app/id6553989325",
+          "https://github.com/sk5s/countdateapp",
+          "https://apt.izzysoft.de/fdroid/index/apk/cyou.sk5s.app.countdate"
+        ]
+      }
+    ]
   }
   </script>
 </head>
